@@ -47,6 +47,7 @@ So at this point, I stopped trying to cluster the group any further. I kept runn
 Robusta Data
 
 The following diagram shows the results (by location) for Run A.
+
  ![Figure 1](https://raw.githubusercontent.com/AlishaMechtley/HierarchicalStructure/master/images/img1.png)
 
 This next tree shows the individuals in each cluster:
