@@ -80,9 +80,7 @@ I clustered the data into two groups. On the second cluster I ran structure agai
 
 
 
- ![Figure 3](https://raw.githubusercontent.com/AlishaMechtley/HierarchicalStructure/master/images/img3.png)
-
- ![Figure 4](https://raw.githubusercontent.com/AlishaMechtley/HierarchicalStructure/master/images/img4.png)
+ ![Figure 3](https://raw.githubusercontent.com/AlishaMechtley/HierarchicalStructure/master/images/img3.png) ![Figure 4](https://raw.githubusercontent.com/AlishaMechtley/HierarchicalStructure/master/images/img4.png)
 
 
 The triangle plot of vector Q on the left is from Pritchard, et al. 2000. The triangle on the right is a single k=3 run with both burn-in and number of MCMC reps set to 100,000.  Each of the three vector components of Q is plotted as a distance to one edge of the triangle. A colored point represents each individual. The points correspond to the prior population labels. As you can see, the two plots look somewhat similar. 
