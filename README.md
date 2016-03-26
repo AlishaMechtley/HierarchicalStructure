@@ -1,6 +1,10 @@
 Heirarchical Analysis of Population Data Using a Recursive Implementation of Structure Software
 ===============================================================================================
 
+This project was my first attempt at running a program recursively which was helpful for my later work (e.g. Missing data problem runs STEM recursively) and in file format conversion (something I do all the time in my feild of bioinformatics).
+The project was also useful in showing that recursive binary clustering of population genetics data using Structure's Baesian method is not useful for resolving tree structures. 
+
+
 ## Introduction
 
 The Structure program uses a model-based clustering method for inferring population structure using genotype data consisting of unlinked markers. The software can be used to demonstrate the presence of population structure, to assign individuals to K populations (where K may be unknown), and to identify migrants and admixed individuals.  The goal of my project was to recursively run the Structure program with k=2 populations and analyze the topology of the resulting tree. The method works as as follows: I run structure with k=2 clusters, separate the data into two files using Q values (discussed later), create a parameter file for each data subset and repeat the process until I get Q values of one over the value of k (both populations equally likely).
@@ -85,7 +89,7 @@ I clustered the data into two groups. On the second cluster I ran structure agai
 
 The triangle plot of vector Q on the left is from Pritchard, et al. 2000. The triangle on the right is a single k=3 run with both burn-in and number of MCMC reps set to 100,000.  Each of the three vector components of Q is plotted as a distance to one edge of the triangle. A colored point represents each individual. The points correspond to the prior population labels. As you can see, the two plots look somewhat similar. 
 
-I painstakingly checked which group each individual clustered to and I shaded accordingly in the box below. It’s important to note that the colors are not exactly the same as those in the triangle for a reason. This is because I am showing the resulting clusters and not the prior population labels (as the triangle shows). The italicized individuals clustered together, the bold clustered together, and the plain text clustered together. 
+I painstakingly checked which group each individual clustered to and I shaded accordingly in the box below. It’s important to note that the shadings are not exactly the same as those groups in the triangle for a reason. This is because I am showing the resulting clusters and not the prior population labels (as the triangle shows). The italicized individuals clustered together, the bold clustered together, and the plain text clustered together. 
 
 ## Cluster 1 PopID = 2 unless otherwise specified (Mbololo?)
 
@@ -95,11 +99,11 @@ I painstakingly checked which group each individual clustered to and I shaded ac
 
 ## Cluster 2.1 PopID = 1 unless otherwise specified (Chawia?)
 
-9, 20, 27, 36, 42, 429, 457, 471, 479, 494, 505, 508, 604, 691, 715, 755, 894, 952, 956, 1329
+```9, 20, 27, 36, 42, 429, 457, 471, 479, 494, 505, 508, 604, 691, 715, 755, 894, 952, 956, 1329```
 
 ## Cluster 2.2 PopID = 3 unless otherwise specified (Ngango?)
 
-#### 15, 17, 19, 28, 38, 40, 41, 43, 44, 48, 49, 50, 51, 52, 54, 61, 7, 724, 768, 806, 817, 827, 828, 829, 834, 845, 846, 853, 864, 865, 877, 884, 886, 890, 901, 911, 915, 918, 920, 921, 928, 929, 933, 937, 957, 966, 967, 968, 969, 970, 974, 975, 976 
+ 15, 17, 19, 28, 38, 40, 41, 43, 44, 48, 49, 50, 51, 52, 54, 61, 7, 724, 768, 806, 817, 827, 828, 829, 834, 845, 846, 853, 864, 865, 877, 884, 886, 890, 901, 911, 915, 918, 920, 921, 928, 929, 933, 937, 957, 966, 967, 968, 969, 970, 974, 975, 976 
 
 *951*
 
